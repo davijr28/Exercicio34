@@ -8,11 +8,12 @@ public class Professor extends Pessoa {
     private String titulo;
     private static final String TITULO = "Doutor";
 
-    public Professor(){
-        this(0.0,"");
+    public Professor() {
+        this("", 0, 0.0, "");
     }
-    
-    public Professor(double salario, String titulo) {
+
+    public Professor(String nome, int idade, double salario, String titulo) {
+        super(nome, idade);
         this.salario = salario;
         this.titulo = titulo;
     }

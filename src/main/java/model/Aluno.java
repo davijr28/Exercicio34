@@ -7,11 +7,12 @@ public class Aluno extends Pessoa {
     private String curso;
     private static final String CURSO = "Engenharia de Computação";
 
-    public Aluno(){
-        this("");
+    public Aluno() {
+        this("", 0, "");
     }
-    
-    public Aluno(String curso) {
+
+    public Aluno(String nome, int idade, String curso) {
+        super(nome, idade);
         this.curso = curso;
     }
 
